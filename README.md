@@ -17,7 +17,7 @@ Challenge
 challenges: numbers in company names appearing as text, words being glue together		
 possible ways: use basic functions like trim, lower, replace to remove white spaces, deal with capitalization, replace dots, dashes etc - but it would not improve the outcome by a lot		
 Reasearched what I could do; created Levenshtein distance function using Chat GPT (apprach the issue by the number of character edits needed to turn one string into another); but did not return very good outcomes		
-Since issses with the file (possibly from manual line breaks, quotes, etc) I also tried some Addons to be able to fuzzy macth directly in Google Sheets but they did not work		
+Since issses with the file (possibly from manual line breaks, quotes, etc) I also tried some addons to be able to fuzzy macth directly in Google Sheets but they did not work		
 Another aproach in SQL to split each name by words, check how many match, and also take into account country. I removed the instances where countries were different; and dealt with them separately, by then trying the soundex function to match by how similar the words sound. Again, had to use Power Query to match this subset of data to the initial file		
 So, isses that still persisted at the end:		
 matches done by preserving country were at times problematic; companies with same name discarded based on location		
